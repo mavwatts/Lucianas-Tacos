@@ -13,4 +13,4 @@
 * Bootstrap 5
 
 ## Notes
-### For this small project I wanted to utilize bootstrap 5 and had the main focus on implementing the carousel as well as learn how to properly utilize the container/row tags.
+### For this small project I wanted to utilize bootstrap 5 and had the main goal of implementing a carousel as well as focus on responsiveness.
