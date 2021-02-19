@@ -1,9 +1,23 @@
-.bg-pink{
-    background-color: #FF004D;
+/* custom properties */
+:root {
+  /* custom colors */
+  --site-color: #e8893c;
+
+  /* custom fonts */
+  --ff-primary: 'Source Sans Pro', sans-serif;
+
 }
 
-.color-pink{
-    color: #FF004D;
+ul, ol {
+  padding: 0;
+}
+
+.color-lettering{
+    color: #fff;
+}
+
+.food-color-lettering{
+  color: red
 }
 
 html, body {
@@ -15,18 +29,18 @@ html, body {
     background: url(./images/carousel_silver_bg.jpg);
     background-size: 100% 100%;
     width: 100%;
-    min-height: 650px;
+    min-height: 700px;
 }
 
 .btn-theme{
-    background-color: #FF004D;
+  background-color: var(--site-color);
     padding: 5px 20px;
     color: #ffffff;
 }
 
-.btn-theme:hover{
-    box-shadow: 0px 0px 0px 4px rgba(255, 0, 70, 0.3);
-    color: #ffffff;
+header {
+  background-color: var(--site-color);
+  border-bottom: 3px solid white;
 }
 
 #main-home .header-top .item a{
@@ -34,7 +48,7 @@ html, body {
 }
 
 #main-home .header-top .item a:hover{
-    color: #FF004D;
+    color: #fff;
 }
 
 #main-home .navbar .nav-item{
@@ -46,7 +60,7 @@ html, body {
 }
 
 #main-home .navbar .nav-item .nav-link:hover{
-    color: #FF004D;
+    color: #fff;
 }
 
 #main-home .navbar .cart-icon{
@@ -85,7 +99,7 @@ html, body {
 
 #main-home #banner-slider .owl-carousel .owl-dots{
     position: absolute;
-    bottom: -6rem;
+    bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -97,6 +111,124 @@ html, body {
 
 #main-home #banner-slider .owl-carousel .owl-dots button.active span{
     background-color: #FF004D;
+}
+
+/*button*/
+#promo_banner {
+  background-color: var(--site-color);
+  height: 5em;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 3px solid white;
+}
+
+#promo_banner > p {
+  padding-top: 1em;
+}
+
+#promo_banner > button{
+  border-radius: 20px;
+  width: 15em;
+  margin-left: 20em;
+}
+
+/* About Section  */
+.about_section {
+  /* background-color: green; */
+  background-image: url('images/lucianas_building.jpg');
+  background-repeat: no-repeat;
+  background-size: 130% 170vh;
+  /* background-position-y: 10%; */
+  background-position-x: 0px;
+  max-height: 100%;
+  width: 100vw;
+}
+
+/* Cards */
+.card {
+  margin-left: 5em;
+  box-shadow: 3px 3px 9px 1px rgba(0, 0, 255, .2);
+}
+
+.card-title {
+  color: black;
+}
+
+.card-text {
+  color: black;
+}
+
+/* Footer styling */
+
+.footer{
+  position: absolute;
+  background-color: #111;
+  height: auto;
+  width: 100vw;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 20px;
+  color: #fff;
+  z-index: 1000;
+  border-top: 3px solid white;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.business-hours {
+  padding: 1em 0 0 13em;
+}
+
+.business-information {
+  padding: 1em 3em 0 0;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* 
+.footer-bottom{
+  background-color: #111;
+  width: 100vw;
+  text-align: center;
+}
+
+.footer-bottom p{
+  word-spacing: 2px;
+  text-transform: capitalize;
+} */ 
+
+ .socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 1em 7rem 0;
+}
+
+
+.socials li{
+  margin: 0 10px;
+}
+
+.socials a{
+  text-decoration: none;
+  color: #fff;
+} 
+
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+}
+
+.socials a:hover i{
+  color: red;
 }
 
 
@@ -305,3 +437,155 @@ html, body {
     z-index: 1;
     height: 100%;
     width: 100%; }
+
+    /* Contact Page  */
+    .contact {
+      position: relative;
+      min-height: 100vh;
+      padding: 50px 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-image: url('images/lucianasbuilding3.jpg');
+      background-color: #2a3e4d;
+      background-blend-mode: soft-light;
+      background-size: cover;
+    }
+
+    .contact .content {
+      max-width: 800px;
+      text-align: center;
+    }
+
+    .contact .content h2 {
+      font-size: 36px;
+      font-weight: 500;
+      color: #fff;
+    }
+
+    .contact .content p {
+      font-weight: 300;
+      color: #fff;
+    }
+
+    .container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container .contactInfo {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container .contactInfo .box{
+      position: relative;
+      padding: 20px 0;
+      display: flex;
+    }
+
+    .container .contactInfo .box .icon{
+      min-width: 60px;
+      height: 60px;
+      background: rgb(47, 167, 43);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      font-size: 22px;
+    }
+
+    .container .contactInfo .box .text{
+      display: flex;
+      margin-left: 20px;
+      font-size: 16px;
+      color: #fff;
+      flex-direction: column;
+      font-weight: 300px;
+    }
+
+    .container .contactInfo .box .text h3{
+      font-weight: 500;
+      color: var(--site-color)
+    }
+
+    .contactForm {
+      width: 40%;
+      padding: 40px;
+      background: var(--site-color);
+    }
+
+    .contactForm h2{
+      font-size: 30px;
+      font-weight: 500;
+    }
+
+    .contactForm .inputBox {
+      position: relative;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .contactForm .inputBox input, 
+    .contactForm .inputBox textarea{
+      width: 100%;
+      padding: 5px 0;
+      font-size: 16px;
+      margin: 10px 0;
+      border: none;
+      border-bottom: 2px solid #333;
+      outline: none;
+      resize: none;
+    }
+
+    .contactForm .inputBox span {
+      position: absolute;
+      left: 0;
+      padding: 5px 0;
+      font-size: 16px;
+      margin: 10px 0;
+      pointer-events: none;
+      transition: 0.5s;
+      color: #666;
+    }
+
+    .contactForm .inputBox input:focus ~ span,
+    .contactForm .inputBox input:valid ~ span,
+    .contactForm .inputBox textarea:focus ~ span,
+    .contactForm .inputBox textarea:valid ~ span    {
+      color: #e91e63;
+      font-size: 12px;
+      transform: translateY(-25px);
+    }
+
+    .contactForm .inputBox input[type='submit']{
+      width: 100px;
+      background: rgb(47, 167, 43);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      font-size: 18px;
+    }
+
+    @media (max-width: 991px) {
+      .contact{
+        padding: 50px
+      }
+      .container{
+        flex-direction: column;
+      }
+
+      .container .contactInfo {
+        margin-bottom: 40px;
+      }
+
+      .container .contactInfo
+       {
+        max-width: 100%;
+      }
+    }
